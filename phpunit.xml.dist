@@ -1,0 +1,29 @@
+<phpunit
+        bootstrap="test-bootstrap.php"
+        colors="true"
+        strict="true"
+        testdox="true"
+        testdox-text="true"
+        >
+    <testsuites>
+        <testsuite name="Go Fish Test Suite">
+            <directory suffix="Test.php">test</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <includePath>src:test</includePath>
+        <const name="DB_DSN" value="sqlite:data/game-test.db"/>
+    </php>
+    <!--<listeners>-->
+        <!--<listener class="\Mockery\Adapter\Phpunit\TestListener"-->
+                  <!--file="Mockery/Adapter/Phpunit/TestListener.php"></listener>-->
+    <!--</listeners>-->
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="build/html-coverage" charset="UTF-8" highlight="true" />
+    </logging>
+</phpunit>

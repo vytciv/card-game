@@ -1,0 +1,17 @@
+game:
+  -
+    id: 1
+    date_created: "2013-03-01 00:00:00"
+    current_player_id: 1
+
+player:
+  -
+    id: 1
+    game_id: 1
+    name: Player1
+    hand: A Hearts,2 Clubs,3 Diamonds,4 Spades,5 Hearts
+  -
+    id: 2
+    game_id: 1
+    name: Player2
+    hand: 6 Hearts,7 Clubs,8 Diamonds,9 Spades,10 Hearts

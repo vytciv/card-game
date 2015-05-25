@@ -1,0 +1,20 @@
+{
+  "name": "vendor_name/package_name",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author's name",
+      "email": "email@example.com"
+    }
+  ],
+  "require-dev": {
+    "phake/phake": "*",
+    "doctrine/common": "*",
+    "hamcrest/hamcrest-php": "*",
+    "mockery/mockery": "*",
+    "phpunit/phpunit": "3.7.*",
+    "phpunit/dbunit": ">=1.2"
+  }
+}
